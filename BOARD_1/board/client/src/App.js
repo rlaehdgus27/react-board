@@ -20,14 +20,7 @@ function App() {
   return (
     <div className="App">
       <h1>게시판</h1>
-      <div className="movie-container">
-        {viewContent.map((Element) => (
-          <div>
-            <h2>{Element.title}</h2>
-            <div>{Element.content}</div>
-          </div>
-        ))}
-      </div>
+
       <div className="form-wrapper">
         <input
           className="title-input"
@@ -51,6 +44,15 @@ function App() {
       >
         입력
       </button>
+
+      <div className="movie-container">
+        {viewContent.map((Element) => (
+          <div>
+            <h2>{Element.title}</h2>
+            <div>{Element.content}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
