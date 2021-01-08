@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const connect = () => {
   if (process.env.NODE_ENV !== "production") {

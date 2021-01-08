@@ -1,7 +1,11 @@
 const express = require("express");
 const morgan = require("morgan");
-const app = express();
+const connect = require("./schemas");
+
 const PORT = process.env.port || 8000;
+
+const app = express();
+connect();
 
 app.use(morgan("dev"));
 
