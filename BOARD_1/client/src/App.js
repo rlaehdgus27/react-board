@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import "./App.css";
 
 function App() {
@@ -49,6 +49,9 @@ function App() {
         {viewContent.map((Element) => (
           <div>
             <h2>{Element.title}</h2>
+            {this.state.notice.map((notice) => (
+              <div key={notice._id}>{notice.title}</div>
+            ))}
             <div>{Element.content}</div>
           </div>
         ))}
