@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import "./App.css";
+import Notice from "../server/schemas";
 
 function App() {
   const [Content, setContent] = useState({
@@ -17,6 +18,8 @@ function App() {
     });
     console.log(Content);
   };
+
+  state = { Notice: [] };
   return (
     <div className="App">
       <h1>게시판</h1>
@@ -49,8 +52,8 @@ function App() {
         {viewContent.map((Element) => (
           <div>
             <h2>{Element.title}</h2>
-            {this.state.notice.map((notice) => (
-              <div key={notice._id}>{notice.title}</div>
+            {this.state.Notice.map((Notice) => (
+              <div key={Notice._id}>{Notice.title}</div>
             ))}
             <div>{Element.content}</div>
           </div>

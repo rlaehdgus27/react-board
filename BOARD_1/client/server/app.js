@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const connect = require("../schemas");
+const connect = require("./schemas");
 
 const PORT = process.env.port || 3000;
 
