@@ -1,9 +1,10 @@
-type Dong {
+type Person {
   name: String!
   age: Int!
   gender: String!
 }
 
 type Query {
-  person: Dong!
+  people: [Person]!
+  person(id: Int!): Person
 }

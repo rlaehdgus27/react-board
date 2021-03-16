@@ -1,12 +1,14 @@
-const Dong = {
-  name: "Dong",
-  age: 27,
-  gender: "male",
-};
+const people = [
+  {
+    name: "Dong",
+    age: 27,
+    gender: "male",
+  },
+];
 
 const resolvers = {
   Query: {
-    person: () => Dong,
+    person: () => people,
   },
 };
 
